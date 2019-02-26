@@ -8,22 +8,16 @@
   <packaging>aar</packaging>
   <dependencies>
     <dependency>
-      <groupId>com.android.support</groupId>
-      <artifactId>appcompat-v7</artifactId>
-      <version>28.0.0</version>
+      <groupId>com.serenegiant</groupId>
+      <artifactId>common</artifactId>
+      <version>3.0.0</version>
       <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.support</groupId>
-      <artifactId>support-v4</artifactId>
-      <version>28.0.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.android.support</groupId>
-      <artifactId>preference-v7</artifactId>
-      <version>28.0.0</version>
-      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>*</artifactId>
+          <groupId>*</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
 </project>
